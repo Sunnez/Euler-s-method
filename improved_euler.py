@@ -22,7 +22,7 @@ y_db = [y]
 
 print("Delta x =" + str(DELTA_X))
 #calculation
-while x < FINAL_X:
+while round(x,3) < FINAL_X:
     z = y + DELTA_X*(f(x,y))
     y = y + DELTA_X/2*(f(x,y)+f(x+DELTA_X,z))
     x += DELTA_X
